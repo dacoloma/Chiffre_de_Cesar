@@ -23,6 +23,8 @@ def chiffre_de_cesar(str,n)
             else
                 str2 << (l.ord + n - 26).chr
             end
+        else
+            str2 << l
         end
     end
     puts str2
@@ -30,10 +32,10 @@ end
 
 
 print "Test ABCD,1 : "
-chiffre_de_cesar("ABCD",1)
+chiffre_de_cesar("ABCD??",1)
 
 print "Test ABCD, 26 : "
-chiffre_de_cesar("ABCD",27)
+chiffre_de_cesar("ABCD??",27)
 
 =begin
 def  test(l, n)
